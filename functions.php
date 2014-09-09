@@ -94,9 +94,11 @@ add_action( 'widgets_init', 'marcus_thompson_widgets_init' );
 function marcus_thompson_scripts() {
 	wp_enqueue_style( 'marcus-thompson-style', get_stylesheet_uri() );
         
-        wp_enqueue_style('marcus-thompson-google-fonts', 'http://fonts.googleapis.com/css?family=Poiret+One|Limelight|Comfortaa:400,300,700|Belleza');
+        wp_enqueue_style('marcus-thompson-content-sidebar', get_template_directory_uri() . '/layouts/content-sidebar.css' );
         
-        wp_enqueue_style('marcus-thompson-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+        wp_enqueue_style( 'marcus-thompson-google-fonts', 'http://fonts.googleapis.com/css?family=Poiret+One|Limelight|Comfortaa:400,300,700|Belleza' );
+        
+        wp_enqueue_style( 'marcus-thompson-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' );
 
 	wp_enqueue_script( 'marcus-thompson-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
