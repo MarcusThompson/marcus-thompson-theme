@@ -149,37 +149,22 @@ input,
 select,
 textarea {
 	color: #31363C;
-	font-family: 'Comfortaa';
+	font-family: 'Open Sans Condensed';
 	font-size: 18px;
 	font-size: 1.8rem;
 	line-height: 1.5;
 }
 
 h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
 	clear: right;
-        font-weight: 900;
-        font-family: 'Limelight';
+        font-weight: 300;
+        font-family: 'Oswald';
         color: #730A13;
-}
-
-h2 {
-        clear: right;
-        font-weight: 900;
-        font-size: 28px;
-        font-family: 'Poiret One';
-        color: #730A13; 
-}
-
-.widget-area h1 {
-        clear: right;
-        font-weight: 900;
-        font-size: 28px;
-        font-family: 'Poiret One';
-        color: #730A13;  
 }
 
 p {
@@ -656,7 +641,7 @@ X.X Header
 }
 
 .site-title {
-    font-weight: 700;
+    font-weight: 300;
     font-size: 60px;
     font-size: 6.0rem;
     line-height: normal;
