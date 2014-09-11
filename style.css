@@ -644,6 +644,17 @@ X.X Header
     background: hsla(16, 29%, 65%, 1);
 }
 
+.title-box {
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 600px;
+    max-width: 75%;
+    padding: 4rem;
+    margin: 0 auto;
+    border: solid 1px #fff;
+    border: solid 1px hsla(0, 0%, 100%, .3);
+}
+
 .site-title {
     font-weight: 700;
     font-size: 60px;
@@ -662,6 +673,18 @@ X.X Header
 .site-description { 
     color: #730A13;
     color: hsla(355, 84%, 25%, 1);
+}
+
+/* Header responsive */
+@media screen and (max-width: 600px) {
+    .site-branding { padding: 0; }
+    
+    .title-box {
+        max-width: 100%;
+        margin: 0;
+        padding: 4rem;
+        border: none;
+    }
 }
 /*--------------------------------------------------------------
 9.0 Widgets
