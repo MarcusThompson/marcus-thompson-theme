@@ -96,7 +96,7 @@ function marcus_thompson_scripts() {
         
         wp_enqueue_style('marcus-thompson-content-sidebar', get_template_directory_uri() . '/layouts/content-sidebar.css' );
         
-        wp_enqueue_style( 'marcus-thompson-google-fonts', 'http://fonts.googleapis.com/css?family=Poiret+One|Limelight|Comfortaa:400,300,700|Belleza' );
+        wp_enqueue_style( 'marcus-thompson-google-fonts', 'http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans+Condensed:300,300italic,700' );
         
         wp_enqueue_style( 'marcus-thompson-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' );
 
