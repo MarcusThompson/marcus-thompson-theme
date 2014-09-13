@@ -23,12 +23,26 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'marcus-thompson' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-                    <div class="title-box">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-                    </div> 
-		</div>
+            
+                <?php if ( get_header_image() && ('blank' == get_header_textcolor()) ) { ?>
+                    <figure class="header-image">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                <img src="<?php header_image(); ?>" width="< ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+                        </a>
+                    </figure>
+                <?php } // End header image check. ?>
+                <?php 
+                    if ( get_header_image() && !('blank' == get_header_textcolor()) ) { 
+                        echo '<div class="site-branding header-background-image" style="background-image: url(' . get_header_image() . ')">'; 
+                    } else {
+                        echo '<div class="site-branding">';
+                    }
+                ?>
+<div class="title-box">
+    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+    <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+</div>
+</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle"><?php _e( 'Primary Menu', 'marcus-thompson' ); ?></button>
