@@ -33,13 +33,20 @@ Layout: Content-Sidebar
     margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1540px) {
     .content-area {
-            float: left;
-            margin-left: -380px;
-            padding-left: 380px;
-            background: #F2ECCE;
-            width: 100%;
+        float: left;
+        width: 100%;
+        margin-right: -380px;
+    }
+}
+
+@media screen and (min-width: 1160px) and (max-width: 1539px) {
+    .content-area {
+        width: 100%;
+        float: left;
+        margin-left: -380px;
+        padding-left: 380px;
     }
     
     .entry-header,
@@ -49,16 +56,17 @@ Layout: Content-Sidebar
     .tag-links,
     .post-navigation,
     .comments-area,
-    .paging-navigation {
-        margin-right: 0;
+    .paging-navigation { 
+        margin-right: 0; 
     }
+    
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1159px) {  
     .site-content .widget-area {
         width: auto;
         max-width: 780px;
-	float: none;
+        float: none;
         margin: 1em auto 0;
     }
 }
