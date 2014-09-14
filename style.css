@@ -149,7 +149,7 @@ input,
 select,
 textarea {
 	color: #31363C;
-	font-family: 'Open Sans Condensed';
+	font-family: 'Open Sans Condensed', Open Sans;
 	font-size: 18px;
 	font-size: 1.8rem;
 	line-height: 1.5;
@@ -163,8 +163,7 @@ h5,
 h6 {
 	clear: right;
         font-weight: 300;
-        font-family: 'Oswald';
-        color: #730A13;
+        font-family: 'Oswald', Open Sans;
 }
 
 p {
@@ -434,10 +433,16 @@ a:active {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+        position: relative;
+        float: left;
+        width: 100%;
+        display: block;
+        clear: both;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        font-family: 'Oswald', Open Sans;
+        background: #31363C;
+        background: hsla(213, 10%, 21%, 1);
 }
 
 .main-navigation ul {
@@ -453,21 +458,32 @@ a:active {
 
 .main-navigation a {
 	display: block;
+        padding: 0.5em 1em;
+        font-weight: 300;
+        font-size: 18px;
+        font-size: 1.8rem;
 	text-decoration: none;
+        line-height: 1.3em;
+        color: white;
+        color: hsl(0, 0%, 100%);
 }
 
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
+        position: absolute;
+        left: 0;
+        z-index: 99999;
+        display: none;
+        float: left;
+        padding: 0;
+        background: #606a76;
+        background: hsla(213, 10%, 42%, 1);
 }
 
 .main-navigation ul ul ul {
 	left: -999em;
 	top: 0;
+        background: #97a0aa;
+        background: hsla(213, 10%, 63%, 1);
 }
 
 .main-navigation ul ul a {
@@ -479,15 +495,46 @@ a:active {
 }
 
 .main-navigation li:hover > a {
+        -webkit-transition: background 200ms ease-in;
+        -moz-transition: background 200ms ease-in;
+        -ms-transition: background 200ms ease-in;
+        -o-transition: background 200ms ease-in;
+        transition: background 200ms ease-in;
+        color: #fff;
+        color: hsl(0, 0%, 100%);
+        background: #606a76;
+        background: hsla(213, 10%, 42%, 1);
 }
 
 .main-navigation ul ul :hover > a {
+        -webkit-transition: background 200ms ease-in;
+        -moz-transition: background 200ms ease-in;
+        -ms-transition: background 200ms ease-in;
+        -o-transition: background 200ms ease-in;
+        transition: background 200ms ease-in;
+}
+
+.main-navigation ul ul ul :hover > a {
+        -webkit-transition: background 200ms ease-in;
+        -moz-transition: background 200ms ease-in;
+        -ms-transition: background 200ms ease-in;
+        -o-transition: background 200ms ease-in;
+        transition: background 200ms ease-in;
 }
 
 .main-navigation ul ul a:hover {
+        background: #97a0aa;
+        background: hsla(213, 10%, 63%, 1);
+}
+
+.main-navigation ul ul ul a:hover {
+        background: #d2d6da;
+        background: hsla(213, 10%, 84%, 1);
 }
 
 .main-navigation ul li:hover > ul {
+        visibility: visible;
+        display: block;
 	left: auto;
 }
 
@@ -495,9 +542,27 @@ a:active {
 	left: 100%;
 }
 
-.main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_item > a:hover,
+.main-navigation .current-menu-item > a:hover {
+    background: #A65A53;
+    color: #fff;
+    color: hsl(0, 0%, 100%);
 }
+
+.main-navigation .current_page_ancestor {
+    background: #ca9a96;
+    background: hsla(5, 33%, 69%, 1);
+}
+
+.main-navigation ul ul .current_page_parent,
+.main-navigation .current_page_parent .current_page_item > a {
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #ca9a96;
+    background: hsla(5, 33%, 69%, 1);
+} 
 
 /* Small menu */
 .menu-toggle {
@@ -673,6 +738,7 @@ X.X Header
     font-weight: 300;
     font-size: 60px;
     font-size: 6.0rem;
+    text-transform: uppercase;
     line-height: normal;
     padding-bottom: 1rem;
 }
@@ -681,12 +747,6 @@ X.X Header
     font-weight: 300;
     font-size: 28px;
     font-size: 2.8rem;
-}
-
-.site-title a,
-.site-description { 
-    color: #730A13;
-    color: hsla(355, 84%, 25%, 1);
 }
 
 /* Header responsive */

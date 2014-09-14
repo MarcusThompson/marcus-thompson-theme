@@ -26,9 +26,9 @@ function marcus_thompson_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'marcus_thompson_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => 'ffffff',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
+		'width'                  => 1280,
+		'height'                 => 300,
+		'flex-height'            => FALSE,
 		'wp-head-callback'       => 'marcus_thompson_header_style',
 		'admin-head-callback'    => 'marcus_thompson_admin_header_style',
 		'admin-preview-callback' => 'marcus_thompson_admin_header_image',
