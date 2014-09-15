@@ -43,6 +43,7 @@ function marcus_thompson_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'marcus-thompson' ),
+                'social' => __( 'Social Menu', 'marcus-thompson' ),
 	) );
 
 	/*
