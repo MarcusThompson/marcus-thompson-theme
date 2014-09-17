@@ -86,6 +86,16 @@ function marcus_thompson_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+        
+        register_sidebar( array(
+                'name'          => __( 'Footer Widgets', 'marcus-thompson' ),
+                'description'   => __( 'Footer widgets area appears in the footer of the site.', 'marcus-thompson' ),
+                'id'            => 'sidebar-2',
+                'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+                'after_widget'  => '</aside>',
+                'before_title'  => '<h1 class="widget-title">',
+                'after_title'   => '</h1>',
+        ) );
 }
 add_action( 'widgets_init', 'marcus_thompson_widgets_init' );
 
@@ -105,6 +115,8 @@ function marcus_thompson_scripts() {
         
         wp_enqueue_script( 'marcus-thompson-superfish-settings', get_template_directory_uri() . '/js/superfish-settings.js', array('marcus-thompson-superfish'), '20140914', true );
 
+        wp_enqueue_script( 'marcus-thompson-hide-search', get_template_directory_uri() . '/js/hide-search.js', array('jquery'), '20140915', true );
+        
 	wp_enqueue_script( 'marcus-thompson-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
         
 	wp_enqueue_script( 'marcus-thompson-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
