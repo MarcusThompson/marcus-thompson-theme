@@ -40,7 +40,7 @@
 
 	<footer class="entry-footer">
 		<?php
-                    echo get_the_tag_list( '<ul><li><i class="fa fa-tag"></i>', '</li><li><i class="fa fa-tag"></i>', '</li></ul>' );
+                    echo get_the_tag_list( '<ul><li><i class="fa fa-tag" style="color: #730A13;"></i>', '</li><li><i class="fa fa-tag" style="color: #730A13;"></i>', '</li></ul>' );
                 ?>
 		<?php edit_post_link( __( 'Edit', 'marcus-thompson' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
