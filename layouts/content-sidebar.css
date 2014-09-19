@@ -3,8 +3,14 @@ Theme Name: MarcusThompson
 Layout: Content-Sidebar
 */
 
-.site-main {
-	margin: 0 25% 0 0;
+.site-content {
+    padding-bottom: 4em;
+    background: #b2b2b2;
+}
+.single .site-content,
+.page .site-content { 
+    background: #fff; 
+    background: hsla(0, 0%, 100%, 1);
 }
 .site-content .widget-area {
         width: 380px;
