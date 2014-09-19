@@ -18,6 +18,13 @@
 
 		<div class="entry-meta">
 			<?php marcus_thompson_posted_on(); ?>
+                        <?php 
+                            if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { 
+                                echo '<span class="comments-link">';
+                                comments_popup_link( __( 'Leave a comment', 'marcus-thompson' ), __( '1 Comment', 'marcus-thompson' ), __( '% Comments', 'marcus-thompson' ) );
+                                echo '</span>';
+                            }
+                        ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
