@@ -812,6 +812,19 @@ a:active {
     }
 }
 
+/* Alignment responsive */
+@media screen and (min-width: 1320px) {
+    .alignleft {
+        margin-left: -160px; 
+    }
+}
+
+@media screen and (min-width: 1820px) {
+    .alignright { 
+        margin-right: -160px; 
+    }
+}
+
 /*--------------------------------------------------------------
 8.0 Clearings
 --------------------------------------------------------------*/
@@ -1420,18 +1433,25 @@ object {
 	margin-bottom: 1.5em;
 	max-width: 100%;
 }
-
 .wp-caption img[class*="wp-image-"] {
 	display: block;
 	margin: 0 auto;
 }
-
 .wp-caption-text {
 	text-align: center;
 }
-
 .wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
+    padding: 0.8075em 1em;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: 'Open Sans Condensed', open-sans;
+    background: #31363C;
+    background: hsla(213, 10%, 21%, 1);
+}
+
+.wp-caption a {
+    color: #F2ECCE;
 }
 
 /*--------------------------------------------------------------
