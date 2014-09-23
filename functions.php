@@ -166,7 +166,9 @@ function marcus_thompson_scripts() {
         
         wp_enqueue_script( 'marcus-thompson-masonry', get_template_directory_uri() . '/js/masonry-settings.js', array('masonry'), '20140917', true );
         
-        wp_enqueue_script( 'marcus-thompson-isotope', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('marcus-thompson-isotope'), '20140922', true );
+        wp_enqueue_script( 'marcus-thompson-isotope', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'), '20140922', true );
+        
+        wp_enqueue_script( 'marcus-thompson-isotope-filtering', get_template_directory_uri() . '/js/isotope-filtering.js', array('marcus-thompson-isotope'), '20140922', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
