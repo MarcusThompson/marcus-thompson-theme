@@ -49,13 +49,15 @@ function marcus_thompson_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
+            <div class="post-nav-box clear">
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'marcus-thompson' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'marcus-thompson' ) );
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'marcus-thompson' ) );
+				previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . _x( 'Previous Post:', 'Previous post', 'marcus-thompson' ) . '</div><h1>%link</h1></div>', '%title' );
+                                next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . _x( 'Next Post:', 'Next post', 'marcus-thompson' ) . '</div><h1>%link</h1></div>', '%title' );
 			?>
 		</div><!-- .nav-links -->
+            </div><!-- .post-nav-box -->
 	</nav><!-- .navigation -->
 	<?php
 }
