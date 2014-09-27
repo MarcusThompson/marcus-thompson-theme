@@ -726,7 +726,7 @@ a:active {
 .site-main .post-navigation {
         font-size: 18px;
         font-size: 1.8rem;
-        font-family: 'Open Sans Condensed', open-sans;
+        font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .nav-links a {
@@ -761,8 +761,24 @@ a:active {
 .post-nav-box {
     padding: 2em 0;
     margin-bottom: 4em;
-    border-top: hsl(0, 0%, 80%) solid 1px;
-    border-bottom: hsl(0, 0%, 80%) solid 1px; 
+    border-top: hsla(355, 84%, 25%, 1) solid 1px;
+    border-bottom: hsla(355, 84%, 25%, 1) solid 1px; 
+}
+
+.comment-navigation {
+    padding: 1em 0;
+    margin: 3em 0;
+    border-top: hsla(355, 84%, 25%, 1) solid 1px;
+    border-bottom: hsla(355, 84%, 25%, 1) solid 1px;  
+}
+
+.comment-navigation i {
+    margin: 0 1em;
+}
+
+.comments-area a {
+    color: #A65A53;
+    color: hsla(5, 33%, 49%, 1);
 }
 
 /*--------------------------------------------------------------
@@ -1254,7 +1270,7 @@ input[type="search"] {
 /* Meta */
 .category-list {
     margin: 1.3em 0 1em;
-    font-family: 'Open Sans Condensed', open-sans;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
     font-size: 1.6rem;
 }
@@ -1272,7 +1288,7 @@ input[type="search"] {
 .entry-meta {
     margin-bottom: 2rem;
     padding: 0;
-    font-family: 'Open Sans Condensed', open-sans;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 14px;
     font-size: 1.4rem;
 }
@@ -1378,7 +1394,7 @@ blockquote cite {
     margin-left: 40%;
     font-size: 18px;
     font-size: 1.8rem;
-    font-family: 'Open Sans Condensed', open-sans;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-style: normal;
     line-height: 1.5em;
     text-align: right;
@@ -1408,14 +1424,122 @@ blockquote.alignright {
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
+
+.comments-title {
+    font-weight: 300;
+    font-size: 36px;
+    font-size: 3.6rem;
+}
+
+.comments-area > ol {
+    padding: 0;
+    margin: 2em 0;
+    list-style-type: none;
+}
+
+ol.children { list-style-type: none; }
+.comment-list ol { margin-left: 50px; }
+.comment-meta { margin-bottom: 1em; }
+
+.comment-author .avatar {
+    width: 50px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.comment-author .fn {
+    font-weight: 300;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    font-size: 2rem;
+}
+
+.comment-metadata {
+    font-size: 14px;
+    font-size:1.4rem;
+}
+
+.comment-content { font-size: 90%; }
+
+.comment-content,
+.reply { margin-left: 70px; }
+
+.comment-body {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: #730A13;
+    border-bottom: hsla(355, 84%, 25%, 1) solid 1px;
+}
+
 .comment-content a {
 	word-wrap: break-word;
+}
+
+.reply {
+    font-weight: 300;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .bypostauthor {
 	display: block;
 }
 
+.bypostauthor > .comment-body {
+    position: relative;
+    padding: 1em;
+    margin-bottom: 2em;
+    background: hsl(0, 0%, 93%);
+    border: none;
+}
+
+/* Comments responsive */
+@media screen and (max-width:600px) {    
+    .comment-list ol { margin-left: 0; }
+    
+    .comment-content ol { margin-left: 1.5em; }
+    
+    .comment-content,
+    .reply { margin-left: 0; }
+}
+
+.comment-reply-title {
+    margin-bottom: .5em;
+    font-weight: 300;
+    font-size: 30px;
+    font-size: 3rem;
+}
+
+.comment-form {
+    padding-bottom: 4rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.comment-form textarea {
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+.comment-form label { display: block; }
+
+.required { color: #730A13; }
+
+.comment-awaiting-moderation { /* Green background color to make moderation seem less aggressive */
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    font-family: 'Open Sans Condnesed', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #84bd68;
+    background: hsl(100, 39%, 57%);
+}
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/
@@ -1468,7 +1592,7 @@ object {
     font-size: 16px;
     font-size: 1.6rem;
     color: #fff;
-    font-family: 'Open Sans Condensed', open-sans;
+    font-family: 'Open Sans Condensed', sans-serif;
     background: #31363C;
     background: hsla(213, 10%, 21%, 1);
 }
