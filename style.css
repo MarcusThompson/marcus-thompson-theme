@@ -1,4 +1,5 @@
 /*
+
 Theme Name: MarcusThompson
 Theme URI: http://underscores.me/
 Author: Marcus Thompson
@@ -1574,6 +1575,10 @@ object {
 }
 
 /* Featured Images */
+
+.single-post-thumbnail { 
+    background: #fff url(images/underglow.svg) repeat; 
+}
 
 .single-post-thumbnail img {
     display: block;
