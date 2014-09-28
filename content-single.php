@@ -9,7 +9,9 @@
     <?php 
         if (has_post_thumbnail()) {
             echo '<div class="single-post-thumbnail clear">';
+            echo '<div class="image-shifter">';
             echo the_post_thumbnail('large-thumb');
+            echo '</div>';
             echo '</div>';
         }
     ?> 
