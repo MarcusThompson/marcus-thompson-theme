@@ -14,9 +14,9 @@ Layout: Content-Sidebar
     background: hsla(0, 0%, 100%, 1);
 }
 .site-content .widget-area {
-        width: 380px;
+        width: 340px;
 	float: right;
-        padding: 4rem;
+        padding: 3rem;
 	overflow: hidden;
         background: #F2ECCE;
 }
