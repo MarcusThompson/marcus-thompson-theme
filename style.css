@@ -782,6 +782,30 @@ a:active {
     color: hsla(5, 33%, 49%, 1);
 }
 
+.paging-navigation ul {
+    margin: 0;
+}
+
+.paging-navigation li { display: inline; }
+
+a.page-numbers,
+span.page-numbers {
+     padding: .3em .7em;
+     color: #A65A53;
+    color: hsla(5, 33%, 49%, 1);
+}
+
+a:hover.page-numbers {
+    color: #A65A53;
+    color: hsla(5, 33%, 49%, 1);
+}
+
+.paging-navigation .current {
+    font-weight: bold;
+    color: #A65A53;
+    color: hsla(5, 33%, 49%, 1);
+}
+
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
