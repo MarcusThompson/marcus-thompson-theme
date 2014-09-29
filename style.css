@@ -1296,18 +1296,19 @@ input[type="search"] {
 .category-list {
     margin: 1.3em 0 1em;
     font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
     font-size: 16px;
     font-size: 1.6rem;
 }
 
 .category-list a {
-    color: #333;
-    color: hsl(0, 0%, 10%);
+    color: #A65A53;
+    color: hsla(5, 33%, 49%, 1);
 }
 
 .category-list a:hover {
-    color: #000;
-    color: hsl(0, 0%, 0%);
+    color: #A65A53;
+    color: hsla(5, 33%, 49%, 1);
 }
 
 .entry-meta {
