@@ -53,8 +53,7 @@ Layout: Content-Sidebar
     padding: 1em 0 2em;
     margin: 0 auto 2em;
     background: rgba(255, 255, 255, 0.7);
-    background: hsla(0, 0%, 100% 0.7);
-    margin-right: 0px;
+    background: hsla(0, 0%, 100% 0.6);
 }
 
 .index-box a {
