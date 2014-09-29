@@ -127,3 +127,12 @@ Layout: Content-Sidebar
         float: right;
     }
 }
+
+.paging-navigation {
+    padding-top: 1em;
+    border-top: 1px #730A13 solid;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    list-style-type: none;
+    background: #fff;
+} 
