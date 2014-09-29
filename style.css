@@ -1604,6 +1604,10 @@ object {
     display: block;
     margin: 0 auto;
 }
+.small-index-thumbnail { 
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
 
 /*--------------------------------------------------------------
 12.1 Captions
