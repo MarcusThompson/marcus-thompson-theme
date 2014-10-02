@@ -40,7 +40,7 @@
             
             <?php
                 /* translators: used between list items, there is a space after the comma */
-                $category_list = get_the_category_list( __( ', ', 'my-simone' ) );
+                $category_list = get_the_category_list( __( ', ', 'marcus-thompson' ) );
 
                 if (marcus_thompson_categorized_blog() && !is_front_page() ) {
                     echo '<div class="category-list">' . $category_list . '</div>';
