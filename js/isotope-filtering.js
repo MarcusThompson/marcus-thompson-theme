@@ -19,22 +19,28 @@
   $(window).smartresize( function() {
  
     // calculate columnWidth
-    var colWidth = Math.floor( $containerProxy.width() / 2 ); // Change this number to your desired amount of columns
+    var colWidth = Math.floor( $containerProxy.width() / 3 ); // Change this number to your desired amount of columns
  
     // set width of container based on columnWidth
     $container.css({
-        width: colWidth * 2 // Change this number to your desired amount of columns
+        width: colWidth * 3 // Change this number to your desired amount of columns
     })
     .isotope({
  
       // disable automatic resizing when window is resized
       resizable: false,
  
-      // set columnWidth option for masonry
-      masonry: {
-        columnWidth: colWidth
-      }
-    });
+      // set options for masonry
+          layoutMode: 'masonryHorizontal',
+          itemSelector: '.portfolio-item',
+          masonryHorizontal: {
+            columnWidth: 400,
+            rowHeight: 400,
+            isFitWidth: true,
+            isAnimated: true
+          }
+
+      });
  
     // trigger smartresize for first time
   }).smartresize();
