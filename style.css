@@ -1,5 +1,6 @@
 /*
 
+
 Theme Name: MarcusThompson
 Theme URI: http://underscores.me/
 Author: Marcus Thompson
@@ -252,7 +253,7 @@ big {
 3.0 Elements
 --------------------------------------------------------------*/
 hr {
-	background-color: #ccc;
+	background-color: #730A13;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -1592,6 +1593,15 @@ Index and Archive
     right: 3rem;
     color: #730A13;
 }
+
+.taxonomy-description {
+    padding-top: 2rem;
+    margin: 2rem 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
+    border-top: 1px solid hsla(355, 84%, 25%, 1);
+    border-bottom: 1px solid hsla(355, 84%, 25%, 1);
+}
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/
@@ -1789,6 +1799,69 @@ object {
 /*--------------------------------------------------------------
 12.3 Isotope Portfolio
 --------------------------------------------------------------*/
+.isotope {
+  background: #DDD;
+  max-width: 1500px;
+}
+
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.portfolio-item {
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin: 40px;
+  padding: 10px;
+}
+
+.portfolio-filters {
+    margin: 30px 0 20px;
+    padding-left: 40px;
+    list-style-type: none;
+}
+
+.portfolio-filters li {
+    display:inline-block;
+    margin: 10px 5px 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.portfolio-filters li a {
+    padding:10px;
+    line-height:28px;
+    background: #31363C;
+    background: hsla(213, 10%, 21%, 1);
+    color: #fff;
+    text-decoration: none;
+    border-radius:5px;
+    font-family: 'Open Sans Condensed', Arial, Helvetica;
+    font-size:18px;
+    font-size: 1.8rem;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+/*When we hover on the button, the colors change*/
+.portfolio-filters li a:hover {
+    background: #606a76;
+    background: hsla(213, 10%, 42%, 1);
+    color: #fff;
+}
+/*Let's make the active job type a different color as well*/
+.portfolio-filters li active a:active {
+    background: #A65A53;
+    background: hsla(5, 33%, 49%, 1);
+    color: #fff;
+}
 
 /**** Isotope Filtering ****/
  
