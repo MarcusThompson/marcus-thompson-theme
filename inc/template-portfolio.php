@@ -6,7 +6,7 @@ get_header(); ?>
  
   <div id="page">
  
-    <ul id="filters">
+      <ul id="filters" class="portfolio-filters">
         <?php
             $terms = get_terms("portfolio-categories");
             $count = count($terms);
@@ -46,8 +46,14 @@ get_header(); ?>
             endif; 
  
         echo '<div class="all portfolio-item '. $tax .'">';
-        echo '<div class="thumbnail">'. the_post_thumbnail() .'</div>';
-        echo '<h2>'. the_title() .'</h2>';
+        if (has_post_thumbnail()) {
+            echo '<div class="thumbnail clear">';
+            echo '<a href="' . get_permalink() . '" title="' . __('Read ', 'marcus-thompson') . get_the_title() . '" rel="bookmark">';
+            echo the_post_thumbnail();
+            echo '</a>';
+            echo '</div>';
+        }
+        echo '<div>'. the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ). '</div>';
         echo '<div>'. the_excerpt() .'</div>';
         echo '</div>'; 
       endwhile; ?>
