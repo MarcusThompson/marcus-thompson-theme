@@ -31,7 +31,8 @@ Layout: Content-Sidebar
 .tag-links,
 .post-navigation,
 .comments-area,
-.paging-navigation {
+.paging-navigation,
+.page-header {
     position: relative;
     max-width: 780px;
     max-width: 78rem;
@@ -93,8 +94,9 @@ Layout: Content-Sidebar
     .tag-links,
     .post-navigation,
     .comments-area,
-    .paging-navigation
-    .index-box { 
+    .paging-navigation,
+    .index-box,
+    .page-header { 
         margin-right: 0; 
     }
     
@@ -128,6 +130,15 @@ Layout: Content-Sidebar
     }
 }
 
+.page-header {
+    padding-top: 1em;
+    border-top: 1px #730A13 solid;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    list-style-type: none;
+    background: rgba(250, 250, 250, 0.8);
+    background: hsla(0, 0%, 98%, 0.8);
+}
 .paging-navigation {
     padding-top: 1em;
     border-top: 1px #730A13 solid;
